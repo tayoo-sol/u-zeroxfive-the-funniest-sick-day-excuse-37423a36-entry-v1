@@ -8,7 +8,7 @@ import { join } from "node:path";
 const LINE =
   "Calling in sick today — my bed filed a formal complaint about my absence, and HR sided with the bed.";
 
-// The gate allows 1 to under 200 characters; this line is 102. Refuse to
+// The gate allows 1 to under 200 characters; this line is 100. Refuse to
 // write anything longer, or anything with leading or trailing whitespace,
 // so a future edit can never break the gate.
 if (LINE.length < 1 || LINE.length >= 200 || LINE.trim() !== LINE) {
